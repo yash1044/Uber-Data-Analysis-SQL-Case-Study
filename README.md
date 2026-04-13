@@ -27,19 +27,35 @@ This project is a deep-dive data analysis case study on Uber's operational data 
 ## 🗂️ Database Schema & Dataset Details
 The analysis is performed on three relational tables. Below is the structure of the dataset used in this case study:
 
+## 🗂️ Database Schema & Dataset Details
+
+The analysis is performed on three relational tables. Below is the structure of the dataset used in this case study:
+
+
+
 ### 1. **Passengers Table**
+
 - `passenger_id`: Unique ID for each passenger.
 - `passenger_name`: Name of the passenger.
 - `rating`: Average rating given to the passenger.
+-`signup_date`: The date when the passenger registered on the Uber platform.
+-`total_rides:` Total number of trips taken by the passenger.
+-`total_spent`: Total cumulative amount spent by the passenger.
+
+
 
 ### 2. **Drivers Table**
+
 - `driver_id`: Unique ID for each driver.
 - `driver_name`: Name of the driver.
 - `rating`: Average rating given to the driver.
 - `earnings`: Total earnings of the driver.
 - `join_date`: Date when the driver joined Uber.
 
+
+
 ### 3. **Rides Table**
+
 - `ride_id`: Unique ID for each ride.
 - `passenger_id`: Foreign key linking to Passengers.
 - `driver_id`: Foreign key linking to Drivers.
@@ -48,8 +64,9 @@ The analysis is performed on three relational tables. Below is the structure of 
 - `dropoff_location`: Destination point.
 - `fare_amount`: Total fare charged for the ride.
 - `ride_duration`: Duration of the ride in minutes.
+- `ride_distance`: Distance covered during the ride (in km/miles).
 - `payment_method`: Method used (Cash, Credit Card, etc.).
 
-> **Note:** The analysis uses `Passengers.csv`, `Drivers.csv`, and `Rides.csv` as the data source. While the raw files are not uploaded for privacy, the SQL script includes the complete logic to handle this schema.
 
-aam j ne bau motunai thay
+
+> **Note:** The analysis uses `Passengers.csv`, `Drivers.csv`, and `Rides.csv` as the data source. While the raw files are not uploaded for privacy, the SQL script includes the complete logic to handle this schema.
