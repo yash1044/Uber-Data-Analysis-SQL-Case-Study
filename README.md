@@ -27,11 +27,6 @@ This project is a deep-dive data analysis case study on Uber's operational data 
 ## 🗂️ Database Schema & Dataset Details
 The analysis is performed on three relational tables. Below is the structure of the dataset used in this case study:
 
-## 🗂️ Database Schema & Dataset Details
-
-The analysis is performed on three relational tables. Below is the structure of the dataset used in this case study:
-
-
 
 ### 1. **Passengers Table**
 
